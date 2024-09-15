@@ -11,10 +11,13 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     gap: 18.75rem;
-  }
 
-  @media(max-width: ${DEVICE_BREAKPOINTS.MD}) {
-
+    @media(max-width: ${DEVICE_BREAKPOINTS.SM}) {
+      display: flex;
+      flex-direction: column;
+      gap: 4.5rem;
+      margin: auto;
+    }
   }
 `
 
@@ -24,10 +27,10 @@ export const Logo = styled.div`
 `
 
 export const Form = styled.form`
+
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-left: 6.75rem;
   width: 29.75rem;
 
   h2 {
@@ -46,5 +49,13 @@ export const Form = styled.form`
   a {
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
     text-align: center;
+  }
+
+  @media(max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    background-color: transparent;
+    
+    h2 {
+      display: none;
+    }
   }
 `

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { DEVICE_BREAKPOINTS } from './deviceBreakpoints'
 
 export default createGlobalStyle`
   * {
@@ -32,7 +33,7 @@ export default createGlobalStyle`
     text-decoration: none;
   }
 
-  button a {
+  button, a {
     cursor: pointer;
   }
 `

@@ -5,13 +5,13 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './styles/global'
 import theme from './styles/theme'
 
-import { SignIn } from './pages/SignIn'
+import { Header } from './components/Header'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <SignIn />
+      <Header />
     </ThemeProvider>
   </StrictMode>,
 )

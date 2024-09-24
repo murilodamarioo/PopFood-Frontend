@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const Container = styled.header`
   width: 100%;
   padding: 1.5rem 7.6rem;
+
+  margin-bottom: 2rem;
   
   display: flex;
   justify-content: center;

@@ -24,7 +24,7 @@ export function Header() {
 
       <Button 
         title="Pedidos" 
-        icon={PiReceiptBold} 
+        icon={PiReceiptBold}
       />
 
       <PiSignOutBold/>

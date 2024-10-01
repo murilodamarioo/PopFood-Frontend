@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.button`
-  width: 100%;
+  width: auto;
   height: 3.5rem;
 
   display: flex;
@@ -16,6 +16,12 @@ export const Container = styled.button`
   border-radius: 5px;
 
   padding: 0.75rem 2rem;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+  }
 
   &:hover {
     background-color: ${({ theme, disabled }) => disabled ? theme.COLORS.TOMATO_400 : theme.COLORS.TOMATO_200};

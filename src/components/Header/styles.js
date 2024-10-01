@@ -30,7 +30,7 @@ export const Container = styled.header`
   }
 
   :nth-child(4):hover {
-    color: ${({ theme }) => theme.COLORS.TOMATO_300};
+    color: ${({ theme }) => theme.COLORS.CARROT_100};
     transition: 0.3s;
   }
 `

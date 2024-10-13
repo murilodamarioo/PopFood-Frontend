@@ -5,12 +5,13 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './styles/global'
 import theme from './styles/theme'
 
-import { Tag } from './components/Tag'
+import { Details } from './pages/Details'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      <Details />
     </ThemeProvider>
   </StrictMode>,
 )

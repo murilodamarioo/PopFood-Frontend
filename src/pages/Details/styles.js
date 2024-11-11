@@ -1,50 +1,58 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
 
-  > *:first-child {
-    align-self: start;
-  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  img {
-    width: 24.375rem;
-    height: 24.31rem;
-    margin-top: 6.25rem;
+    > *:first-child{
+      align-self: flex-start;
+      margin-left: 7.625rem;
+    }
   }
-`
+`;
 
 export const Content = styled.div`
+  padding: 20px;
+  flex: 1;
+
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 3rem;
-  margin-left: 3rem;
-  margin-top: 9rem;
 
   h3 {
-    color: ${({ theme }) => theme.COLORS.LIGHT_300};
+    font-family: 'Poppins';
     font-size: 2.5rem;
     font-weight: 500;
     line-height: 3.5rem;
   }
 
   p {
-    align-self: stretch;
+    font-family: 'Poppins';
     font-size: 1.5rem;
-    font-weight: 400;
     line-height: 2rem;
-    color: ${({ theme }) => theme.COLORS.LIGHT_300};
+  }
+
+  img {
+    width: 24.4rem;
+    height: 24.4rem;
+    object-fit: cover;
   }
 
   .content-wrapper {
-    max-width: 43rem;
+    width: 42.9rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
   }
-`
+`;
+
 
 export const Tags = styled.div`
   display: flex;
@@ -55,6 +63,8 @@ export const Tags = styled.div`
 export const Add = styled.div`
   display: flex;
   align-items: center;
+
+  margin-top: 3rem;
 
   svg {
     width: 1.5rem;

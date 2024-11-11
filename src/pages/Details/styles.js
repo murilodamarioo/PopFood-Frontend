@@ -11,9 +11,11 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
 
+    max-width: 70rem;
+    margin: 0 auto;
+
     > *:first-child{
       align-self: flex-start;
-      margin-left: 7.625rem;
     }
   }
 `;

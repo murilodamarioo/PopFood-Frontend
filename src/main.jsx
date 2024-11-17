@@ -5,13 +5,13 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './styles/global'
 import theme from './styles/theme'
 
-import { Details } from './pages/Details'
+import { AddDishes } from './pages/AddDishes'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Details />
+      <AddDishes />
     </ThemeProvider>
   </StrictMode>,
 )
